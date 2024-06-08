@@ -11,7 +11,7 @@ import pickle
 import streamlit as st
 
 # Load the Q-table model
-q_table = pickle.load(open('/Users/ishikaishani/Desktop/techbrust/qtable_model.sav', 'rb'))
+q_table = pickle.load(open('qtable_model.sav', 'rb'))
 
 def irrigation_prediction(input_data, q_table):
     current_state_continuous = np.asarray(input_data, dtype=np.float32)
